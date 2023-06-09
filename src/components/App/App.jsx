@@ -37,7 +37,7 @@ export function App() {
         setError('');
         setTotalPages(Math.ceil(data.totalHits / 12));
       } catch (error) {
-        Notify.failure('Oops, something went wrong, please try again.');
+        Notify.failure('Oops, something went wrong. Please try again.');
       } finally {
         setIsLoading(false);
       }
