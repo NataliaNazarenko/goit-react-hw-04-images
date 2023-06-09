@@ -39,7 +39,7 @@ export function Modal({ largeImageURL, tags, onClose }) {
 }
 
 Modal.propTypes = {
-  largeImageURL: PropTypes.string,
+  largeImageURL: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
-  onClose: PropTypes.func,
+  onClose: PropTypes.func.isRequired,
 };
